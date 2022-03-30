@@ -1,5 +1,6 @@
 # JuliaPro Docker Image
 
+[![Build Docker](https://github.com/MillironX/docker-JuliaPro/actions/workflows/build.yml/badge.svg)](https://github.com/MillironX/docker-JuliaPro/actions/workflows/build.yml)
 [![Unlicense](https://img.shields.io/github/license/MillironX/docker-JuliaPro)](https://github.com/MillironX/docker-JuliaPro/blob/master/LICENSE)
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/MillironX/docker-JuliaPro)](https://github.com/MillironX/docker-JuliaPro/tags)
 [![Docker Pulls](https://img.shields.io/docker/pulls/millironx/juliapro)](https://hub.docker.com/r/millironx/juliapro)
