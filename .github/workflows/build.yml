@@ -14,6 +14,9 @@ jobs:
       - name: Extract Tag Name 🕵️
         id: tag-name
         uses: olegtarasov/get-tag@v2.1
+      - name: Extract Short Hash 🕵️
+        id: hash
+        uses: pr-mpt/actions-commit-has@v1
       - name: Install QEMU 🖥️
         uses: docker/setup-qemu-action@v1
       - name: Install Docker 🐋
@@ -41,8 +44,8 @@ jobs:
           push: true
           tags: |
             millironx/juliapro:latest
-            millironx/juliapro:${{ steps.tag-name.outputs.tag }}
+            millironx/juliapro:${{ steps.tag-name.outputs.tag }}-${{ steps.hash.outputs.short }}
             quay.io/millironx/juliapro:latest
-            quay.io/millironx/juliapro:${{ steps.tag-name.outputs.tag }}
+            quay.io/millironx/juliapro:${{ steps.tag-name.outputs.tag }}-${{ steps.hash.outputs.short }}
             ghcr.io/millironx/juliapro:latest
-            ghcr.io/millironx/juliapro:${{ steps.tag-name.outputs.tag }}
+            ghcr.io/millironx/juliapro:${{ steps.tag-name.outputs.tag }}-${{ steps.hash.outputs.short }}
