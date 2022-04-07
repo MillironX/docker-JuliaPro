@@ -1,0 +1,39 @@
+name: Update Packages
+on:
+  schedule:
+    - cron: "0 0 1,15 * *"
+  workflow_dispatch:
+
+jobs:
+  pkg_up:
+    name: Update Packages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: "1.6"
+      - id: julia_ver
+        run: |
+          echo "::set-output name=version::$(julia -v | awk '{print $3}')"
+      - run: |
+          julia --project=${GITHUB_WORKSPACE} -e '
+            using Pkg
+            Pkg.instantiate()
+            Pkg.update()'
+      - id: time
+        uses: nanzm/get-time-action@v1.1
+        with:
+          format: "YYYY-MM-DD"
+      - uses: devops-infra/action-commit-push@v0.9.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "[⚡ AUTOMATED]: Pkg upgrade for ${{ steps.time.outputs.time }}"
+      - id: hash
+        run: |
+          echo "::set-output name=hash::$(git rev-parse --short HEAD)"
+      - uses: mathieudutour/github-tag-action@v6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit_sha: ${{ steps.hash.outputs.hash }}
+          custom_tag: ${{ steps.julia_ver.outputs.version }}-${{ steps.hash.outputs.hash }}
