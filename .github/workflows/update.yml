@@ -37,4 +37,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           commit_sha: ${{ steps.hash.outputs.long_hash }}
+          tag_prefix: ""
           custom_tag: ${{ steps.julia_ver.outputs.version }}-${{ steps.hash.outputs.short_hash }}
