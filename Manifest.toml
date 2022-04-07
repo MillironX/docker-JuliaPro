@@ -1075,6 +1075,12 @@ git-tree-sha1 = "cae5e3dfd89b209e01bcd65b3a25e74462c67ee0"
 uuid = "ef3ab10e-7fda-4108-b977-705223b18434"
 version = "0.3.0"
 
+[[Kelpie]]
+deps = ["EzXML"]
+git-tree-sha1 = "b8934c11c2890eb7ae2a62e7928cda3d6f4163ca"
+uuid = "1b112299-d6bc-44e2-912a-478f25731460"
+version = "0.2.1"
+
 [[KernelDensity]]
 deps = ["Distributions", "DocStringExtensions", "FFTW", "Interpolations", "StatsBase"]
 git-tree-sha1 = "591e8dc09ad18386189610acafb970032c519707"

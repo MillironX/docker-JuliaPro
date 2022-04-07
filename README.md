@@ -148,6 +148,7 @@ this image.
 - [x] [JSON3](https://github.com/quinnj/JSON3.jl)
 - [x] [YAML](https://github.com/JuliaData/YAML.jl)
 - [x] [NLsolve](https://github.com/JuliaNLSolvers/NLsolve.jl)
+- [x] [Kelpie](https://github.com/MillironX/Kelpie.jl)
 
 [^1]: This image doesn't include Juno, just the curated packages.
 
