@@ -14,9 +14,6 @@ jobs:
       - name: Extract Tag Name 🕵️
         id: tag-name
         uses: olegtarasov/get-tag@v2.1
-      - name: Extract Short Hash 🕵️
-        id: hash
-        uses: pr-mpt/actions-commit-hash@v1
       - name: Install QEMU 🖥️
         uses: docker/setup-qemu-action@v1
       - name: Install Docker 🐋
