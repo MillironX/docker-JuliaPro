@@ -44,8 +44,8 @@ jobs:
           push: true
           tags: |
             millironx/juliapro:latest
-            millironx/juliapro:${{ steps.tag-name.outputs.tag }}-${{ steps.hash.outputs.short }}
+            millironx/juliapro:${{ steps.tag-name.outputs.tag }}
             quay.io/millironx/juliapro:latest
-            quay.io/millironx/juliapro:${{ steps.tag-name.outputs.tag }}-${{ steps.hash.outputs.short }}
+            quay.io/millironx/juliapro:${{ steps.tag-name.outputs.tag }}
             ghcr.io/millironx/juliapro:latest
-            ghcr.io/millironx/juliapro:${{ steps.tag-name.outputs.tag }}-${{ steps.hash.outputs.short }}
+            ghcr.io/millironx/juliapro:${{ steps.tag-name.outputs.tag }}
