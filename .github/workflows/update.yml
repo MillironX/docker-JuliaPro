@@ -31,9 +31,10 @@ jobs:
           commit_message: "[⚡ AUTOMATED]: Pkg upgrade for ${{ steps.time.outputs.time }}"
       - id: hash
         run: |
-          echo "::set-output name=hash::$(git rev-parse --short HEAD)"
+          echo "::set-output name=short_hash::$(git rev-parse --short HEAD)"
+          echo "::set-output name=long_hash::$(git rev-parse HEAD)"
       - uses: mathieudutour/github-tag-action@v6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          commit_sha: ${{ steps.hash.outputs.hash }}
-          custom_tag: ${{ steps.julia_ver.outputs.version }}-${{ steps.hash.outputs.hash }}
+          commit_sha: ${{ steps.hash.outputs.long_hash }}
+          custom_tag: ${{ steps.julia_ver.outputs.version }}-${{ steps.hash.outputs.short_hash }}
