@@ -143,6 +143,7 @@ this image.
 
 ### My Own Additions
 
+- [x] [ArgParse](https://github.com/carlobaldassi/ArgParse.jl)
 - [x] [EzXML](https://github.com/JuliaIO/EzXML.jl)
 - [x] [JSON3](https://github.com/quinnj/JSON3.jl)
 - [x] [YAML](https://github.com/JuliaData/YAML.jl)
