@@ -1,4 +1,4 @@
-FROM julia:1.6.5-bullseye
+FROM julia:1.6-bullseye
 
 ENV JULIA_DEPOT_PATH="/usr/local/share/julia"
 
