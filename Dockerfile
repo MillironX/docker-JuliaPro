@@ -12,7 +12,7 @@ COPY Project.toml /
 COPY Manifest.toml /
 
 RUN julia -e 'using Pkg; Pkg.instantiate()'
-RUN julia --project=/ -e 'using Pkg; Pkg.instantiate()'
+RUN julia --project=/ -e 'using Pkg; Pkg.instantiate(); Pkg.up()'
 RUN \
   mv /Project.toml ${JULIA_DEPOT_PATH}/environments/v1.6/ && \
   mv /Manifest.toml ${JULIA_DEPOT_PATH}/environments/v1.6/
