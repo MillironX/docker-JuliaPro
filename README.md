@@ -1,11 +1,10 @@
 # JuliaPro Docker Image
 
-[![Build Docker](https://github.com/MillironX/docker-JuliaPro/actions/workflows/build.yml/badge.svg)](https://github.com/MillironX/docker-JuliaPro/actions/workflows/build.yml)
+[![Build Docker](https://github.com/MillironX/docker-JuliaPro/actions/workflows/build_docker.yml/badge.svg)](https://github.com/MillironX/docker-JuliaPro/actions/workflows/build_docker.yml)
 [![Unlicense](https://img.shields.io/github/license/MillironX/docker-JuliaPro)](https://github.com/MillironX/docker-JuliaPro/blob/master/LICENSE)
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/MillironX/docker-JuliaPro)](https://github.com/MillironX/docker-JuliaPro/tags)
 [![Docker Pulls](https://img.shields.io/docker/pulls/millironx/juliapro)](https://hub.docker.com/r/millironx/juliapro)
-[![Docker Repository on Quay](https://quay.io/repository/millironx/juliapro/status "Docker Repository on
-Quay")](https://quay.io/repository/millironx/juliapro)
+[![Docker Repository on Quay](https://quay.io/repository/millironx/juliapro/status "Docker Repository on Quay")](https://quay.io/repository/millironx/juliapro)
 
 Remember that clunky [Atom]-based [Julia] distribution that gave Julia LTS a UI
 and debugger similar to [Matlab] and already included all the packages you could
@@ -44,10 +43,10 @@ other packages that I consider essential today at the bottom of the list.
 - [x] [DataStructures](https://github.com/JuliaLang/DataStructures.jl)
 - [x] [LightGraphs](https://github.com/JuliaGraphs/LightGraphs.jl)
 - [ ] ~~[Atom](https://github.com/JunoLab/Atom.jl)~~ (Interop meaningless in
-  container)
+      container)
 - [x] [JuliaWebAPI](https://github.com/JuliaWeb/JuliaWebAPI.jl)
 - [ ] ~~[IJulia](https://github.com/JuliaLang/IJulia.jl)~~ (Soft dependency on
-  Python, which isn't included in the container)
+      Python, which isn't included in the container)
 - [x] [Nettle](https://github.com/staticfloat/Nettle.jl)
 - [x] [DSP](https://github.com/JuliaDSP/DSP.jl)
 - [x] [NearestNeighbors](https://github.com/KristofferC/NearestNeighbors.jl)
@@ -56,7 +55,7 @@ other packages that I consider essential today at the bottom of the list.
 - [x] [Libz](https://github.com/BioJulia/Libz.jl)
 - [x] [BenchmarkTools](https://github.com/JuliaCI/BenchmarkTools.jl)
 - [x] ~~[Rebugger](https://github.com/timholy/Rebugger.jl)~~ (Errors on
-  precompilation)
+      precompilation)
 - [x] [Debugger](https://github.com/JuliaDebug/Debugger.jl)
 
 ### General Math
@@ -104,10 +103,10 @@ other packages that I consider essential today at the bottom of the list.
 - [x] [MLBase](https://github.com/JuliaStats/MLBase.jl)
 - [x] [Flux](https://github.com/FluxML/Flux.jl)
 - [ ] ~~[TensorFlow](https://github.com/malmaud/TensorFlow.jl)~~ (Dependency
-  conflict with Flux: opted for Flux over TensorFlow)
+      conflict with Flux: opted for Flux over TensorFlow)
 - [x] [Metalhead](https://github.com/FluxML/Metalhead.jl)
 - [ ] ~~[ScikitLearn](https://github.com/cstjean/ScikitLearn.jl)~~ (No Python in
-  container)
+      container)
 
 ### Interoperability with Other Languages
 
@@ -129,17 +128,17 @@ this image.
 - [x] [StaticArrays](https://github.com/JuliaArrays/StaticArrays.jl)
 - [x] [ProtoBuf](https://github.com/JuliaIO/ProtoBuf.jl)
 - [ ] ~~[CuArrays](https://github.com/JuliaGPU/CuArrays.jl)~~ (Package
-  deprecated and depends on GPU hardware)
+      deprecated and depends on GPU hardware)
 
 ### Economics and Finance
 
 - [x] [QuantEcon](https://github.com/QuantEcon/QuantEcon.jl)
 - [x] [BusinessDays](https://github.com/JuliaFinance/BusinessDays.jl)
 - [ ] ~~[Bloomberg](https://github.com/milktrader/Bloomberg.jl)~~ (Empty package
-  -- maybe proprietary?)
+      -- maybe proprietary?)
 - [ ] ~~[Blpapi (Bloomberg connector)](https://juliacomputing.com/docs/blpapi-manual.pdf)~~ (Package unavailable)
 - [ ] ~~[Miletus](https://github.com/JuliaComputing/Miletus.jl)~~ (Package old
-  enough to require more downgrades than I'm comfortable with)
+      enough to require more downgrades than I'm comfortable with)
 
 ### My Own Additions
 
@@ -153,7 +152,7 @@ this image.
 
 [^1]: This image doesn't include Juno, just the curated packages.
 
-[`JULIA_DEPOT_PATH`]: https://docs.julialang.org/en/v1/manual/environment-variables/#JULIA_DEPOT_PATH
+[`julia_depot_path`]: https://docs.julialang.org/en/v1/manual/environment-variables/#JULIA_DEPOT_PATH
 [atom]: https://atom.io
 [docker hub]: https://hub.docker.com
 [docker]: https://www.docker.com
