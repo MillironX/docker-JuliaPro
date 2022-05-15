@@ -173,9 +173,9 @@ version = "0.4.2"
 
 [[CPUSummary]]
 deps = ["CpuId", "IfElse", "Static"]
-git-tree-sha1 = "baaac45b4462b3b0be16726f38b789bf330fcb7a"
+git-tree-sha1 = "0eaf4aedad5ccc3e39481db55d72973f856dc564"
 uuid = "2a0fbf3d-bb9c-48f3-b0a9-814d99fd7ab9"
-version = "0.1.21"
+version = "0.1.22"
 
 [[CSSUtil]]
 deps = ["Colors", "JSON", "Markdown", "Measures", "WebIO"]
@@ -215,9 +215,9 @@ version = "0.2.2"
 
 [[ChainRules]]
 deps = ["ChainRulesCore", "Compat", "IrrationalConstants", "LinearAlgebra", "Random", "RealDot", "SparseArrays", "Statistics"]
-git-tree-sha1 = "9cf409b9e99adfdbbce9db7ce266763d84d1d593"
+git-tree-sha1 = "ab656fb36197083c5817667e76cccd10d11f5c30"
 uuid = "082447d4-558c-5d27-93f4-14fc19e9eca2"
-version = "1.30.0"
+version = "1.32.0"
 
 [[ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra", "SparseArrays"]
@@ -671,9 +671,9 @@ version = "0.4.2"
 
 [[ForwardDiff]]
 deps = ["CommonSubexpressions", "DiffResults", "DiffRules", "LinearAlgebra", "LogExpFunctions", "NaNMath", "Preferences", "Printf", "Random", "SpecialFunctions", "StaticArrays"]
-git-tree-sha1 = "7a380de46b0a1db85c59ebbce5788412a39e4cb7"
+git-tree-sha1 = "89cc49bf5819f0a10a7a3c38885e7c7ee048de57"
 uuid = "f6369f11-7733-5829-9624-2563aa707210"
-version = "0.10.28"
+version = "0.10.29"
 
 [[FreeType]]
 deps = ["CEnum", "FreeType2_jll"]
@@ -1192,9 +1192,9 @@ version = "3.0.0+1"
 
 [[LLVM]]
 deps = ["CEnum", "LLVMExtra_jll", "Libdl", "Printf", "Unicode"]
-git-tree-sha1 = "dd58421009014ff1ffacaa0db2a9a392114d75ee"
+git-tree-sha1 = "c8d47589611803a0f3b4813d9e267cd4e3dbcefb"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "4.11.0"
+version = "4.11.1"
 
 [[LLVMExtra_jll]]
 deps = ["Artifacts", "JLLWrappers", "LazyArtifacts", "Libdl", "Pkg", "TOML"]
@@ -1359,9 +1359,9 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [[LoopVectorization]]
 deps = ["ArrayInterface", "CPUSummary", "ChainRulesCore", "CloseOpenIntervals", "DocStringExtensions", "ForwardDiff", "HostCPUFeatures", "IfElse", "LayoutPointers", "LinearAlgebra", "OffsetArrays", "PolyesterWeave", "SIMDDualNumbers", "SLEEFPirates", "SpecialFunctions", "Static", "ThreadingUtilities", "UnPack", "VectorizationBase"]
-git-tree-sha1 = "4acc35e95bf18de5e9562d27735bef0950f2ed74"
+git-tree-sha1 = "2c7b360d8b620a28c77ff6275f5612d4d6446942"
 uuid = "bdcacae8-1622-11e9-2a5c-532679323890"
-version = "0.12.108"
+version = "0.12.109"
 
 [[MKL_jll]]
 deps = ["Artifacts", "IntelOpenMP_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "Pkg"]
@@ -1494,9 +1494,9 @@ version = "1.0.13"
 
 [[MutableArithmetics]]
 deps = ["LinearAlgebra", "SparseArrays", "Test"]
-git-tree-sha1 = "ba8c0f8732a24facba709388c74ba99dcbfdda1e"
+git-tree-sha1 = "69caf1c05c3f9428e8405a15cea80936019355ea"
 uuid = "d8a4904e-b15c-11e9-3269-09a3773c0cb0"
-version = "1.0.0"
+version = "1.0.1"
 
 [[NLSolversBase]]
 deps = ["DiffResults", "Distributed", "FiniteDiff", "ForwardDiff"]
@@ -2201,9 +2201,9 @@ version = "6.47.0"
 
 [[StrideArraysCore]]
 deps = ["ArrayInterface", "CloseOpenIntervals", "IfElse", "LayoutPointers", "ManualMemory", "Requires", "SIMDTypes", "Static", "ThreadingUtilities"]
-git-tree-sha1 = "70d9007ff05440058c0301985b2275edc2b2ce25"
+git-tree-sha1 = "d32a1b537a6083697cbdd5af02347d24499f7c6d"
 uuid = "7792a7ef-975c-4747-a70f-980b88e8d1da"
-version = "0.3.3"
+version = "0.3.5"
 
 [[StringEncodings]]
 deps = ["Libiconv_jll"]
