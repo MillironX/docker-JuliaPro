@@ -149,6 +149,7 @@ this image.
 - [x] [NLsolve](https://github.com/JuliaNLSolvers/NLsolve.jl)
 - [x] [Kelpie](https://github.com/MillironX/Kelpie.jl)
 - [x] [Mustache](https://github.com/jverzani/Mustache.jl)
+- [x] [HTTP](https://github.com/JuliaWeb/http.jl)
 
 [^1]: This image doesn't include Juno, just the curated packages.
 
