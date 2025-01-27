@@ -97,13 +97,12 @@ other packages that I consider essential today at the bottom of the list.
 
 ### Deep Learning and Machine Learning
 
-- [x] [Knet](https://github.com/denizyuret/Knet.jl)
+- [ ] ~~[Knet](https://github.com/denizyuret/Knet.jl)~~ (Won't precompile on Julia 1.10)
 - [x] [Clustering](https://github.com/JuliaStats/Clustering.jl)
-- [x] [DecisionTree](https://github.com/bensadeghi/DecisionTree.jl)
+- [x] [DecisionTree](https://github.com/JuliaAI/DecisionTree.jl)
 - [x] [MLBase](https://github.com/JuliaStats/MLBase.jl)
 - [x] [Flux](https://github.com/FluxML/Flux.jl)
-- [ ] ~~[TensorFlow](https://github.com/malmaud/TensorFlow.jl)~~ (Dependency
-      conflict with Flux: opted for Flux over TensorFlow)
+- [ ] ~~[TensorFlow](https://github.com/malmaud/TensorFlow.jl)~~ (TensorFlow devs recommend Flux over TensorFlow)
 - [x] [Metalhead](https://github.com/FluxML/Metalhead.jl)
 - [ ] ~~[ScikitLearn](https://github.com/cstjean/ScikitLearn.jl)~~ (No Python in
       container)
